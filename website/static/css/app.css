@@ -1,0 +1,100 @@
+html {
+    background-color: #13171a;
+    font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+    /* 
+        color pallet: #2F3E46 | #354F52 | #52796F | #84A98C | #CAD2C5
+    */
+}
+h1, h2, h3 {
+    color: #84A98C;
+    text-align: justify;
+}
+h4 {
+    color: #CAD2C5;
+}
+.pointer{
+    font-size: 50px;
+}
+.sub-title {
+    color: #52796F;
+}
+p {
+    color: #CAD2C5;
+}
+.main {
+    padding: 100px;
+    text-align: left;
+    padding-top: 20px;
+}
+.about-me {
+    padding-top: 0px;
+}
+.main-certificate {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.main-books {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.main-contact {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.copyright {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+p, ul {
+    text-align: justify;
+    line-height: 1.85;
+    font-size: 14px;
+    font-weight: 400;
+}
+.txt-cp {
+    font-size: 10px;
+    color: #90928e;
+}
+a {
+    color: #CAD2C5;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+  display: flex;
+} 
+.section {
+  flex: 1; /*grow*/
+  padding-right: 8px;
+}  
+@media (max-width: 768px) { /*breakpoint*/
+  .container {
+    flex-direction: column;
+  }
+}
+img {
+    opacity: 0.8;
+    width:100%;
+}
+img:hover {
+    opacity: 1.0;
+}
+ul {
+    padding: 0;
+    color: #CAD2C5;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .main { 
+        padding: 50px;
+        text-align: left;
+        padding-top: 0px;
+     }
+}
+
+a:hover {
+    color: #d480aa;
+    text-decoration: underline;
+}

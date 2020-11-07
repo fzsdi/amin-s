@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block title %}Amin Khoshnood{% endblock title %}
+{% block main %}
+<div class="main">
+  <h1 class="pointer">☟</h1>
+  <h1>Hi, I'm Amin Khoshnood and I'm a system operation engineer who is a privacy enthusiast.</h1>
+  <div class="about-me">
+    <p>
+        Right now, I'm living in Tartu and currently working at 
+        <a target="_blank" href="https://every-pay.com/">EveryPay</a>. Before that, I did dev operations and system administration works for 
+        <a target="_blank" href="https://cafebazaar.ir/?l=en">CafeBazaar</a>, 
+        <a target="_blank" href="https://www.arvancloud.com/en">ArvanCloud</a> and 
+        <a target="_blank" href="http://aban.solutions/ppc.html">AbanPPC</a>.
+        In here you can find some information about me, some of my certificates and books I've read.
+    </p>
+    <div class="container">
+      <div class="section">
+        <p>
+          <h4><i class="fas fa-leaf"></i> Life</h4>
+          <ul>
+            <li>Born in 1995</li>
+            <li>Started learning DevOps in 2015</li>
+            <li>Moved to Tehran in 2017</li>
+            <li>Moved to Estonia, Tartu in 2019</li>
+          </ul>
+        </p>
+      </div>
+      <div class="section">
+        <p>
+          <h4><i class="fas fa-fire"></i> Intrests</h4>
+          <ul>
+            <li>Swimming</li>
+            <li>Traveling</li>
+            <li>Watching documentries</li>
+            <li>Reading books</li>
+          </ul>
+        </p>
+      </div>
+      <div class="section">
+        <p>
+          <h4><i class="fas fa-hand-peace"></i> Volunteered for</h4>
+          <ul>
+            <li>RIPE Atlas project since 2017</li>
+            <li>Blitzortung lightning detection project since 2017</li>
+          </ul>
+        </p>
+      </div>
+    </div>  
+  </div>
+  <div class="main-certificate">
+    <h3>Certificates</h3>
+    <p class="about-me">These are some of my certificates so far.</p>
+    <div class="container">
+      <div class="section">
+        <a href="{{ url_for('static', filename='img/lpic2.jpg') }}" target="_blank">
+          <img src="{{ url_for('static', filename='img/lpic2.jpg') }}" alt="LPIC-2: Linux Engineer (Linux Network Professional)">
+        </a>
+      </div>
+      <div class="section">
+        <a href="{{ url_for('static', filename='img/lpic1.jpg') }}" target="_blank">
+          <img src="{{ url_for('static', filename='img/lpic1.jpg') }}" alt="LPIC-1: Linux System Administrator (Linux Server Professional)">
+        </a>
+      </div>
+      <div class="section">
+        <a href="{{ url_for('static', filename='img/suse12.jpg') }}" target="_blank">
+          <img src="{{ url_for('static', filename='img/suse12.jpg') }}" alt="SUSE Certified Linux Professional 12">
+        </a>
+      </div>
+      <div class="section">
+        <a href="{{ url_for('static', filename='img/suse11.jpg') }}" target="_blank">
+          <img src="{{ url_for('static', filename='img/suse11.jpg') }}" alt="SUSE Certified Linux Professional 11">
+        </a>
+      </div>
+    </div>    
+  </div>
+  <div class="main-books">
+    <h3>Learning</h3>
+    <p class="about-me">These are some of my favorite books so far. You can find more on
+      <a target="_blank" href="https://www.goodreads.com/review/list/120846892?page=1&shelf=read"><i class="fab fa-goodreads"></i></a>.
+    </p>
+    <div class="container">
+      <div class="section">
+        <a href="https://www.goodreads.com/book/show/16153182-cypherpunks" target="_blank">
+          <img src="{{ url_for('static', filename='img/cypherpunk.jpg') }}" alt="Cypherpunks: Freedom and the Future of the Internet">
+        </a>
+      </div>
+      <div class="section">
+        <a href="https://www.goodreads.com/en/book/show/22305519" target="_blank">
+          <img src="{{ url_for('static', filename='img/bulletproof-ssl-and-tls.jpg') }}" alt="Bulletproof SSL and TLS: The Complete Guide to Deploying Secure Servers and Web Applications">
+        </a>
+      </div>
+      <div class="section">
+        <a href="https://www.goodreads.com/book/show/8772005-unix-and-linux-system-administration-handbook" target="_blank">
+          <img src="{{ url_for('static', filename='img/unix-and-linux-system-administration-handbook.jpg') }}" alt="UNIX and Linux System Administration Handbook">
+        </a>
+      </div>
+      <div class="section">
+        <a href="https://www.goodreads.com/book/show/13838572-linux-bible" target="_blank">
+          <img src="{{ url_for('static', filename='img/linux-bible.jpg') }}" alt="Linux Bible">
+        </a>
+      </div>
+      <div class="section">
+        <a href="https://www.goodreads.com/book/show/29958964-mastering-kvm-virtualization" target="_blank">
+          <img src="{{ url_for('static', filename='img/mastering-kvm-virtualization.jpg') }}" alt="Mastering KVM Virtualization">
+        </a>
+      </div>
+      <div class="section">
+        <a href="https://www.goodreads.com/book/show/302680.DNS_and_BIND" target="_blank">
+          <img src="{{ url_for('static', filename='img/dns-and-bind.jpg') }}" alt="DNS and BIND">
+        </a>
+      </div>
+      <div class="section">
+        <a href="https://www.goodreads.com/book/show/586470.Network_Security_with_OpenSSL" target="_blank">
+          <img src="{{ url_for('static', filename='img/network-security-with-openssl.jpg') }}" alt="Network Security with OpenSSL: Cryptography for Secure Communications">
+        </a>
+      </div>
+      <div  class="section">
+        <a href="https://www.goodreads.com/book/show/2785409" target="_blank">
+          <img src="{{ url_for('static', filename='img/dns-in-action.jpg') }}" alt="DNS in Action">
+        </a>
+      </div>
+    </div>    
+  </div>
+  <div class="main-contact">
+    <h3>Contact</h3>
+    <p>
+      You can find me on 
+        <a target="_blank" href="https://github.com/amnkh"><i class="fab fa-github-alt"></i></a>, 
+        <a target="_blank" href="https://www.linkedin.com/in/noodi/"><i class="fab fa-linkedin-in"></i></a> or on 
+        <a target="_blank" href="https://twitter.com/noodinet"><i class="fab fa-twitter"></i></a>,
+        and my mail address at
+        <code>khoshnood[at]protonmail[dot]com</code>
+    </p>
+  </div>
+  <div class="copyright">
+    <p class="txt-cp">
+      Copyright © 2020 Amin Khoshnood
+    </p>
+  </div>
+</div>
+{% block aboutMe %}{% endblock aboutMe %}
+{% endblock main %}

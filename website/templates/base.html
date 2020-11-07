@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+  </style>
+  <script src="https://kit.fontawesome.com/323180c7f1.js" crossorigin="anonymous"></script>
+  {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+  <div id="main">
+    <div class="utility-nav navbar navbar-fixed-top">
+    <div class="navbar-inner">
+    <div class="container">
+      
+    </div>
+   </div>
+  </div>
+  <div class="content container">
+    {% block main %}{% endblock main %}
+  </div>
+  </div>
+</body>
+</html>
